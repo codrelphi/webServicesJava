@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+		version="3.1">
+		
+	<jsp-config>
+	  	<jsp-property-group>
+	  		<url-pattern>*.jsp</url-pattern>
+	  		<include-prelude>/WEB-INF/tagslib.jsp</include-prelude>
+	  	</jsp-property-group>
+	  </jsp-config>
+	
+	<servlet>
+		<servlet-name>ListeProduit</servlet-name>
+		<servlet-class>fr.produitappv2.servlets.ListeProduit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListeProduit</servlet-name>
+		<url-pattern>/produits</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AjoutProduit</servlet-name>
+		<servlet-class>fr.produitappv2.servlets.AjoutProduit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AjoutProduit</servlet-name>
+		<url-pattern>/ajoutProduit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SuppressionProduit</servlet-name>
+		<servlet-class>fr.produitappv2.servlets.SuppressionProduit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SuppressionProduit</servlet-name>
+		<url-pattern>/suppressionProduit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditProduit</servlet-name>
+		<servlet-class>fr.produitappv2.servlets.EditProduit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditProduit</servlet-name>
+		<url-pattern>/editProduit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VoirProduit</servlet-name>
+		<servlet-class>fr.produitappv2.servlets.VoirProduit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VoirProduit</servlet-name>
+		<url-pattern>/voirProduit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>fr.produitappv2.servlets.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
